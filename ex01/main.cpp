@@ -28,7 +28,7 @@ int	main()
 	Data*	deserialized = Serializer::deserialize(raw);
 	std::cout << "Deserialized Pointer: " << deserialized << std::endl;
 
-	if (deserialized == &fakeDataObj)
+	if (deserialized == &dataObj)
 	{
 		std::cout << "Success: Pointer match!" << std::endl;
 		std::cout << "Data: " << deserialized->text << ", " << deserialized->value << std::endl;
